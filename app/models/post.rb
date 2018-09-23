@@ -5,4 +5,6 @@ class Post < ActiveRecord::Base
   validates :content, length: { minimum: 250 }
   validates :category, inclusion: { in: %w(Fiction NonFiction)}
   
+  validates :title, inclusion: { in: %w(Secret Guess)}
+  
 end
